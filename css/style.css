@@ -1,0 +1,62 @@
+:root{
+    
+--White: hsl(0, 0%, 100%);
+--Lightgray: hsl(212, 45%, 89%);
+--Grayishblue: hsl(220, 15%, 55%);
+--Darkblue: hsl(218, 44%, 22%);
+}
+
+html{
+    background-color: var(--Lightgray);
+}
+body{
+    background-color: var(--White);
+    height: 40rem;
+    margin: 6rem 2rem 0rem 2rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+}
+.contenedor{
+    background-image: url(../img/image-qr-code.png);
+    width: 90%;
+    height: 18rem;
+    margin-left: 1rem;
+    background-size: contain;
+    border-radius: 1rem;
+    /*Me falta darle margen arriba pero no me deja*/
+}
+.informacion{
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.informacion h2{
+    font-family: 'Outfit', sans-serif;
+}
+.informacion p{
+    font-family: 'Outfit', sans-serif;
+    color: var(--Grayishblue);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 15px;
+}
+@media (min-width:1440px){
+    body{
+        margin-left: 34rem;
+        margin-right: 34rem;
+        margin-top: 10rem;
+        height: 33rem;
+    }
+    .contenedor{
+        background-size: cover;
+        padding-bottom: 1rem;
+        /*Me falta darle margen arriba pero no me deja*/
+
+    }
+    .informacion{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+}
